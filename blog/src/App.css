@@ -1,0 +1,100 @@
+/* App.css */
+
+/* Blog Container */
+.blog-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+  background-color: #fce7e7;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 36px;
+  margin: 0;
+  color: #fff;
+  text-shadow: 1px 1px 2px #333;
+}
+
+a {
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f5a6a6;
+}
+
+/* Links */
+.links {
+  display: flex;
+  margin-bottom: 30px;
+}
+
+a {
+  margin-right: 20px;
+  font-size: 20px;
+  color: #333;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+a:last-child {
+  margin-right: 0;
+}
+
+/* Left Column */
+.left-column {
+  width: 70%;
+  margin-right: 50px;
+}
+
+/* Rectangle */
+.rectangle {
+  background-color: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.rectangle a {
+  font-size: 24px;
+  color: #333;
+  text-shadow: 1px 1px 2px #fff;
+}
+
+.rectangle p {
+  font-size: 18px;
+  color: #666;
+  margin: 10px 0 0;
+}
+
+/* Right Column */
+.right-column {
+  width: 30%;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 768px) {
+  .blog-container {
+    width: 90%;
+  }
+
+  .left-column {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .right-column {
+    width: 100%;
+    margin-top: 50px;
+  }
+}

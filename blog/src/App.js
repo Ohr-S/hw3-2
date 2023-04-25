@@ -1,61 +1,30 @@
 import React from "react";
 import "./App.css";
+import Header from './header.js';
+import Links from "./links"
+// import "./left"
+import RightColumn from "./right"
+import Column from "./column"
 
-function Header() {
-  return (
-    <header>
-      <h1>This is my blog</h1>
-      <a href="#">Login</a>
-    </header>
-  );
-}
 
-function Links() {
-  return (
-    <div className="links">
-      <a href="#">Home</a>
-      <a href="#">About Me</a>
-      <a href="#">Contact Me</a>
-    </div>
-  );
-}
+const left_posts = [
+    {title: "This is my life", description: "If you want to know more about me, call me"},
+    {title: "Peace", description: "I believe in peace"},
+    {title: "Heart", description: "Love, Love and Love"},
+];
 
-function Rectangle(props) {
-  return (
-    <div className="rectangle">
-      <a href="#">{props.title}</a>
-      <p>{props.description}</p>
-    </div>
-  );
-}
-
-function LeftColumn() {
-  return (
-    <div className="left-column">
-      <Links />
-      <Rectangle title="This is my life" description="If you want to know more about me, call me" />
-      <Rectangle title="Peace" description="I believe in peace" />
-      <Rectangle title="Heart" description="Love, Love and Love" />
-    </div>
-  );
-}
-
-function RightColumn() {
-  return (
-    <div className="right-column">
-      <Rectangle title="Soul" description="The name of my dog :)" />
-      <Rectangle title="Dance" description="My best hobby" />
-    </div>
-  );
-}
-
+const right_posts = [
+    {title: "Soul", description: "The name of my dog :)"},
+    {title: "Dance", description: "My best hobby"},
+];
 function Blog() {
   return (
     <div className="blog-container">
       <Header />
       <div className="blog-content">
-        <LeftColumn />
-        <RightColumn />
+        <Links/>
+        <Column posts={left_posts} className="left-column"/>
+        <Column posts={right_posts} className="right-column"/>
       </div>
     </div>
   );

@@ -2,8 +2,6 @@ import React from "react";
 import "./App.css";
 import Header from './header.js';
 import Links from "./links"
-// import "./left"
-import RightColumn from "./right"
 import Column from "./column"
 
 
